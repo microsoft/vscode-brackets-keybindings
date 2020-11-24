@@ -1,0 +1,47 @@
+{
+    "name": "brackets-keybindings",
+    "displayName": "Brackets Keymap",
+    "description": "Popular Brackets keybindings for VS Code.",
+    "version": "0.1.0",
+    "publisher": "ms-vscode",
+    "engines": {
+        "vscode": "^1.6.0"
+    },
+    "categories": [
+        "Keymaps"
+    ],
+    "keywords": [
+        "keymap"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Microsoft/vscode-brackets-keybindings.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Microsoft/vscode-brackets-keybindings/issues"
+    },
+    "preview": true,
+    "icon": "brackets-keyboard.png",
+    "contributes": {
+        "keybindings": [
+            {
+                "key": "ctrl+d",
+                "command": "editor.action.duplicateSelection"
+            },
+            {
+                "key": "alt+f3",
+                "mac": "cmd+ctrl+g",
+                "command": "editor.action.duplicateSelection"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "vscode": "^1.0.0"
+    },
+    "dependencies": {
+        "jsonfile": "^2.2.3"
+    }
+}

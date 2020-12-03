@@ -25,13 +25,137 @@
     "contributes": {
         "keybindings": [
             {
-                "key": "ctrl+d",
-                "command": "editor.action.duplicateSelection"
+                "command": "workbench.action.files.openFileFolder",
+                "key": "ctrl+alt+o",
+                "mac": "alt+cmd+o"
             },
             {
+                "command": "workbench.action.closeAllEditors",
+                "key": "ctrl+shift+w",
+                "mac": "shift+cmd+w"
+            },
+            {
+                "command": "expandLineSelection",
+                "key": "ctrl-l",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorColumnSelectUp",
+                "key": "shift+alt+up",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "cursorColumnSelectDown",
+                "key": "shift+alt+down",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "editor.action.copyLinesDownAction",
+                "key": "ctrl+d",
+                "mac": "cmd+d",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.deleteLines",
+                "key": "shift+cmd+d",
+                "when": "textInputFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.moveLinesUpAction",
+                "key": "ctrl+shift+up",
+                "mac": "cmd+ctrl+up",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.moveLinesDownAction",
+                "key": "ctrl+shift+down",
+                "mac": "cmd+ctrl+down",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.blockComment",
+                "key": "ctrl+shift+/",
+                "mac": "alt+cmd+/",
+                "when": "editorTextFocus && !editorReadonly"
+            },
+            {
+                "command": "editor.action.startFindReplaceAction",
+                "key": "ctrl+shift+h",
+                "mac": "alt+cmd+shift+f",
+                "when": "editorFocus || editorIsOpen"
+            },
+            {
+                "command": "selectAllSearchEditorMatches",
                 "key": "alt+f3",
                 "mac": "cmd+ctrl+g",
-                "command": "editor.action.duplicateSelection"
+                "when": "inSearchEditor && inSearchEditor"
+            },
+            {
+                "command": "editor.action.startFindReplaceAction",
+                "key": "ctrl+h",
+                "mac": "alt+cmd+f",
+                "when": "editorFocus || editorIsOpen"
+            },
+            {
+                "command": "workbench.action.toggleSidebarVisibility",
+                "key": "ctrl+alt+h",
+                "mac": "cmd+shift+h"
+            },
+            {
+                "command": "scrollLineUp",
+                "key": "ctrl+up",
+                "mac": "alt+ctrl+up",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "scrollLineDown",
+                "key": "ctrl+down",
+                "mac": "alt+ctrl+down",
+                "when": "textInputFocus"
+            },
+            {
+                "command": "workbench.action.quickOpen",
+                "key": "ctrl+shift+o"
+            },
+            {
+                "command": "workbench.action.gotoLine",
+                "key": "ctrl-g",
+                "mac": "cmd-g"
+            },
+            {
+                "command": "workbench.action.gotoSymbol",
+                "key": "ctrl-t",
+                "mac": "cmd-t"
+            },
+            {
+                "command": "workbench.action.showAllSymbols",
+                "key": "ctrl+shift+t",
+                "mac": "cmd+shift+t"
+            },
+            {
+                "command": "editor.action.revealDefinition",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor",
+                "key": "ctrl-j",
+                "mac": "cmd+j"
+            },
+            {
+                "command": "editor.action.marker.next",
+                "key": "f8",
+                "mac": "cmd+'",
+                "when": "editorFocus"
+            },
+            {
+                "command": "workbench.action.nextEditor",
+                "key": "ctrl+pagedown"
+            },
+            {
+                "command": "workbench.action.previousEditor",
+                "key": "ctrl+pageup"
+            },
+            {
+                "command": "extension.liveServer.goOnline",
+                "key": "ctrl+alt+p",
+                "mac": "alt+cmd+p"
             }
         ]
     },

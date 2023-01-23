@@ -156,7 +156,16 @@
                 "command": "extension.liveServer.goOnline",
                 "key": "ctrl+alt+p",
                 "mac": "alt+cmd+p"
+            },
+            {
+                "command" : "Debug.StartWithoutDebugging",
+                "key": "ctrl+f5"
+            },
+            {
+                "command" : "Edit.CompleteWord",
+                "key": "Ctrl+Spacebar"
             }
+            
         ]
     },
     "scripts": {

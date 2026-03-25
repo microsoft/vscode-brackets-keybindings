@@ -22,7 +22,7 @@
         "url": "https://github.com/Microsoft/vscode-brackets-keybindings/issues"
     },
     "icon": "brackets-keyboard.png",
-    "contributes": {
+    "contributes.keybindings": {
         "keybindings": [
             {
                 "command": "workbench.action.files.openFileFolder",
